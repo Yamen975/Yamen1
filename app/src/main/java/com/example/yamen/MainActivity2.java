@@ -44,7 +44,7 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
         }
         else{
             Intent i=new Intent(Intent.ACTION_PICK,MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-
+            startActivityForResult(i,GALLERY_REQUEST);
         }
     }
 
