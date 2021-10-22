@@ -2,13 +2,27 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:textAlignment="center"
+    >
 
-    <TextView
+    <EditText
         android:id="@+id/editEditTextEmail"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:hint="Email"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="293dp"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/editEditTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:gravity="center"
         tools:layout_editor_absoluteX="124dp"
         tools:layout_editor_absoluteY="293dp" />
 
@@ -19,12 +33,25 @@
         android:text="Button"
         tools:layout_editor_absoluteX="115dp"
         tools:layout_editor_absoluteY="400dp" />
+    <ImageButton
+        android:layout_marginTop="100dp"
+        android:id="@+id/buttonCamera"
+        android:src="@drawable/camera"
+        android:layout_width="69dp"
+        android:layout_height="69dp"
+        android:text="Take Picture" />
 
-    <TextView
-        android:id="@+id/editTextTextPassword"
+    <ImageButton
+        android:id="@+id/buttonGallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/photom"
+        android:text="Open Gallery"></ImageButton>
+
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="127dp"
-        tools:layout_editor_absoluteY="336dp" />
+        android:src="@drawable/camera"
+        android:id="@+id/imageViewProfile"></ImageView>
+
 </LinearLayout>

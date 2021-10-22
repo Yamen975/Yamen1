@@ -9,18 +9,20 @@
     android:orientation="vertical">
 
 
-    <Button
+    <ImageButton
         android:layout_marginTop="100dp"
         android:id="@+id/buttonCamera"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:src="@drawable/camera"
+        android:layout_width="69dp"
+        android:layout_height="69dp"
         android:text="Take Picture" />
 
-    <Button
+    <ImageButton
         android:id="@+id/buttonGallery"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Open Gallery"></Button>
+        android:src="@drawable/photom"
+        android:text="Open Gallery"></ImageButton>
 
     <ImageView
         android:layout_marginTop="50dp"

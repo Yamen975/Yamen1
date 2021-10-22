@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import java.io.FileNotFoundException;
@@ -19,7 +20,7 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
 
     private static final int CAMERA_REQUEST =0;
     private static final int GALLERY_REQUEST =1;
-    private Button buttonCamera,buttonGallery;
+    private ImageButton buttonCamera,buttonGallery;
     private ImageView imageViewProfile;
     private Bitmap picture;
     

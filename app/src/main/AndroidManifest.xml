@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Yamen">
         <activity
-            android:name=".MainActivity"
+            android:name=".MainActivity2"
             android:exported="true" />
         <activity
             android:name=".ArrayListActivity"
@@ -22,7 +22,7 @@
             android:name=".WelcomeActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity2"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
