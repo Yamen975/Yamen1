@@ -42,7 +42,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
-        password = findViewById(R.id.editTextPassword);
+        password = findViewById(R.id.editEditTextPassword);
         emails=findViewById(R.id.editEditTextEmail);
         buttonCamera=findViewById(R.id.buttonCamera);
         buttonCamera.setOnClickListener(this);

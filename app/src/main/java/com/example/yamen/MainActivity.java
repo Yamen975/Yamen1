@@ -4,6 +4,9 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlarmManager;
+import android.app.PendingIntent;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -26,20 +29,28 @@ import com.google.firebase.auth.GoogleAuthProvider;
 
 public class MainActivity extends AppCompatActivity implements View.OnLongClickListener ,DialogInterface.OnClickListener{
 
-
+    private static final int NOTIFICATION_REMINDER_NIGHT = 1;
     private static final String TAG ="FIREBASE";
     private Button login;
     private EditText editTextName;
     private EditText editTextPassword;
     private Button clear;
-    private TextView signUp;
+    private Button signUp;
     private FirebaseAuth mAuth;
+    private Intent musicIntent;
+
+
 
     @Override
+
+
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        musicIntent = new Intent(this, MusicService.class);
+        startService(musicIntent);
 
         mAuth = FirebaseAuth.getInstance();
         editTextName=findViewById((R.id.editTextName));
@@ -63,7 +74,16 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
             editTextName.setText(email);
             editTextPassword.setText(password);
         }
+
+        Intent notifyIntent = new Intent(this,NotificationReceiver.class);
+        PendingIntent pendingIntent = PendingIntent.getBroadcast
+                (this, NOTIFICATION_REMINDER_NIGHT, notifyIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+        AlarmManager alarmManager = (AlarmManager) this.getSystemService(Context.ALARM_SERVICE);
+        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,  System.currentTimeMillis(),
+                1000 * 60 * 2, pendingIntent);
+
     }
+
 
     public void openA(){
         Intent intent=new Intent(this, SignUpActivity.class);
