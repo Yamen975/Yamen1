@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "725511967447",
+    "project_id": "yamen-7a9dd",
+    "storage_bucket": "yamen-7a9dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:725511967447:android:7cabc667b287cb58899692",
+        "android_client_info": {
+          "package_name": "com.example.yamen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "725511967447-qifi0klet7vno22llovnet3v17erb5dl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUqbYb8aGcXmO9aMhTf_XMzrRJ8i6mDqk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "725511967447-qifi0klet7vno22llovnet3v17erb5dl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
