@@ -1,11 +1,11 @@
 package com.example.yamen;
-
 import android.app.IntentService;
 import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Intent;
+
 import android.content.Context;
 import android.os.Build;
 
@@ -41,7 +41,7 @@ public class NotificationIntentService extends IntentService {
         this intent will be pending until the users clicks on the notification
         and will activate the activity specified in the intent
         */
-        Intent noIntent1 = new Intent(this, MainActivity.class);
+        Intent noIntent1 = new Intent(this, Login.class);
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 2, noIntent1, PendingIntent.FLAG_UPDATE_CURRENT);
 
         //this connects between the notification builder and the pending intent

@@ -15,12 +15,12 @@ import androidx.annotation.Nullable;
 
 import java.util.List;
 
-public class CustomAdapter extends ArrayAdapter<Item> {
+public class CustomAdapter extends ArrayAdapter<BarberShop> {
 
     private Context context;
     private int resource;
 
-    public CustomAdapter(@NonNull Context context, int resource, @NonNull List<Item> objects) {
+    public CustomAdapter(@NonNull Context context, int resource, @NonNull List<BarberShop> objects) {
         super(context, resource, objects);
         this.context = context;
         this.resource = resource;//this is the item row resource, the design for each row
@@ -56,7 +56,7 @@ public class CustomAdapter extends ArrayAdapter<Item> {
         View view  = convertView;
         if(view == null)
             view= LayoutInflater.from(context).inflate(resource, parent, false);
-        Item item = getItem(position);//method from the android studio, not related to Item object
+        BarberShop item = getItem(position);//method from the android studio, not related to Item object
         if(item!=null){
             ImageView imageView = view.findViewById(R.id.imageItem);
             TextView textViewDescription = view.findViewById(R.id.textViewDesc);
@@ -67,8 +67,8 @@ public class CustomAdapter extends ArrayAdapter<Item> {
                     Toast.makeText(context, "This item was added to shopping cart",Toast.LENGTH_LONG).show();
                 }
             });
-            imageView.setImageResource(item.getResid());
-            textViewDescription.setText(item.getDescription());
+          //  imageView.setImageResource(item.getResid());
+           // textViewDescription.setText(item.getDescription());
 
         }
         return view;

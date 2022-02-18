@@ -26,7 +26,7 @@ public class WelcomeActivity extends AppCompatActivity {
     }
 
     public void back (View view){
-        Intent intent= new Intent(this, MainActivity.class);
+        Intent intent= new Intent(this, Login.class);
         startActivity(intent);
     }
 }

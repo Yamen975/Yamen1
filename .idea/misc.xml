@@ -5,14 +5,20 @@
       <map>
         <entry key="..\:/Users/97250/AndroidStudioProjects/Yamen/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2703125" />
         <entry key="..\:/Users/97250/AndroidStudioProjects/Yamen/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2703125" />
+        <entry key="..\:/Users/97250/AndroidStudioProjects/Yamen/app/src/main/res/drawable/ic_person.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/97250/AndroidStudioProjects/Yamen/app/src/main/res/layout/activity_about.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/97250/AndroidStudioProjects/Yamen/app/src/main/res/layout/activity_array_list.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/97250/AndroidStudioProjects/Yamen/app/src/main/res/layout/activity_array_list2.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/97250/AndroidStudioProjects/Yamen/app/src/main/res/layout/activity_customer_sign_up.xml" value="0.346875" />
+        <entry key="..\:/Users/97250/AndroidStudioProjects/Yamen/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/Users/97250/AndroidStudioProjects/Yamen/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/97250/AndroidStudioProjects/Yamen/app/src/main/res/layout/activity_main2.xml" value="0.11614583333333334" />
+        <entry key="..\:/Users/97250/AndroidStudioProjects/Yamen/app/src/main/res/layout/activity_main3.xml" value="0.3625" />
         <entry key="..\:/Users/97250/AndroidStudioProjects/Yamen/app/src/main/res/layout/activity_signup.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/97250/AndroidStudioProjects/Yamen/app/src/main/res/layout/activity_welcome.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/97250/AndroidStudioProjects/Yamen/app/src/main/res/layout/itemrow.xml" value="0.1" />
+        <entry key="..\:/Users/97250/AndroidStudioProjects/Yamen/app/src/main/res/layout/barber_signup.xml" value="0.275" />
+        <entry key="..\:/Users/97250/AndroidStudioProjects/Yamen/app/src/main/res/layout/choose_type.xml" value="0.275" />
+        <entry key="..\:/Users/97250/AndroidStudioProjects/Yamen/app/src/main/res/layout/itemrow.xml" value="0.2" />
         <entry key="..\:/Users/97250/AndroidStudioProjects/Yamen/app/src/main/res/layout/threepoints.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/97250/AndroidStudioProjects/Yamen/app/src/main/res/menu/menu.xml" value="0.25416666666666665" />
       </map>

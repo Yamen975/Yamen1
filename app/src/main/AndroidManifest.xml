@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.yamen">
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION"
+        tools:ignore="CoarseFineLocation" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -9,23 +15,38 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Yamen">
+        <activity
+            android:name=".Profile"
+            android:exported="true" />
+        <activity
+            android:name=".BarberShopSetUp"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CustomerSignUp"
+            android:exported="true" />
+        <activity
+            android:name=".Login"
+            android:exported="true" />
 
         <service
             android:name=".NotificationIntentService"
-            android:exported="false"></service>
-
+            android:exported="false" />
         <service
             android:name=".MusicService"
             android:enabled="true"
             android:exported="true" />
 
-
-
         <activity
-            android:name=".MainActivity2"
+            android:name=".SignUpActivity"
             android:exported="true" />
         <activity
-            android:name=".ArrayListActivity"
+            android:name=".BarberSignUp"
+            android:exported="true" />
+        <activity
+            android:name=".Type"
             android:exported="true" />
         <activity
             android:name=".AboutActivity"
@@ -34,7 +55,7 @@
             android:name=".WelcomeActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ArrayListActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

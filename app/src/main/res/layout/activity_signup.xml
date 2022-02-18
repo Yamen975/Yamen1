@@ -10,6 +10,14 @@
     >
 
     <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="293dp"
+        android:gravity="center"/>
+    <EditText
         android:id="@+id/editEditTextEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -25,15 +33,30 @@
         android:hint="Password"
         android:gravity="center"
         tools:layout_editor_absoluteX="124dp"
-        tools:layout_editor_absoluteY="293dp" />
-
+        tools:layout_editor_absoluteY="293dp"
+        android:inputType="textPassword"/>
     <Button
-        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:id="@+id/bt_location"
+        android:text="Get Location"
+        >
+
+    </Button>
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
         tools:layout_editor_absoluteX="115dp"
         tools:layout_editor_absoluteY="400dp" />
+
+    <Button
+        android:id="@+id/toLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="login" />
 
 
 </LinearLayout>
